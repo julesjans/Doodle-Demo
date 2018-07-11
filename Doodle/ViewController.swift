@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  Drawing
+//  Doodle
 //
 //  Created by Julian Jans on 27/06/2018.
 //  Copyright © 2018 Julian Jans. All rights reserved.
@@ -255,7 +255,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     // MARK: File functions
     
     @IBAction func save() {
-        let alert = UIAlertController(title: "Save Drawing?", message: "Do you want to save this drawing to Photos?", preferredStyle: UIAlertControllerStyle.alert)
+        let alert = UIAlertController(title: "Save Doodle?", message: "Do you want to save this doodle to Photos?", preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "Yes please!", style: .destructive, handler: { (alert) in
             UIGraphicsBeginImageContextWithOptions(self.view.frame.size, true, 2.0)
             self.drawingView.layer.render(in: UIGraphicsGetCurrentContext()!)
