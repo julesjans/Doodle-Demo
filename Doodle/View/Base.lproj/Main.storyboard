@@ -14,7 +14,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Drawing" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Doodle" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -65,7 +65,7 @@
                             <stackView clearsContextBeforeDrawing="NO" contentMode="scaleToFill" verticalHuggingPriority="252" distribution="fillEqually" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="QeC-uC-FcG">
                                 <rect key="frame" x="12" y="619" width="351" height="36"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Ek-W9-xM9" customClass="Palette" customModule="Drawing" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Ek-W9-xM9" customClass="Palette" customModule="Doodle" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="4" width="28.5" height="28"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <gestureRecognizers/>
@@ -82,7 +82,7 @@
                                             <outletCollection property="gestureRecognizers" destination="6Yk-tE-tpr" appends="YES" id="eO3-9L-4mv"/>
                                         </connections>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yup-8X-wzx" customClass="Palette" customModule="Drawing" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yup-8X-wzx" customClass="Palette" customModule="Doodle" customModuleProvider="target">
                                         <rect key="frame" x="40.5" y="4" width="28" height="28"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <gestureRecognizers/>
@@ -98,7 +98,7 @@
                                             <outletCollection property="gestureRecognizers" destination="chT-Kq-RDx" appends="YES" id="BrS-9r-p5u"/>
                                         </connections>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fKO-Ee-UZR" customClass="Palette" customModule="Drawing" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fKO-Ee-UZR" customClass="Palette" customModule="Doodle" customModuleProvider="target">
                                         <rect key="frame" x="80.5" y="4" width="28.5" height="28"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <gestureRecognizers/>
@@ -114,7 +114,7 @@
                                             <outletCollection property="gestureRecognizers" destination="YKt-Et-hBI" appends="YES" id="VRI-yi-WbH"/>
                                         </connections>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HmF-u6-QSb" customClass="Palette" customModule="Drawing" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HmF-u6-QSb" customClass="Palette" customModule="Doodle" customModuleProvider="target">
                                         <rect key="frame" x="121" y="4" width="28.5" height="28"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <gestureRecognizers/>
@@ -130,7 +130,7 @@
                                             <outletCollection property="gestureRecognizers" destination="vXK-rT-dky" appends="YES" id="tBa-gk-tIo"/>
                                         </connections>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MEQ-Xu-Ai2" customClass="Palette" customModule="Drawing" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MEQ-Xu-Ai2" customClass="Palette" customModule="Doodle" customModuleProvider="target">
                                         <rect key="frame" x="161.5" y="4" width="28" height="28"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <gestureRecognizers/>
@@ -146,7 +146,7 @@
                                             <outletCollection property="gestureRecognizers" destination="UHq-UE-Z1s" appends="YES" id="JeR-vc-vP5"/>
                                         </connections>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8QY-q3-IPW" customClass="Palette" customModule="Drawing" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8QY-q3-IPW" customClass="Palette" customModule="Doodle" customModuleProvider="target">
                                         <rect key="frame" x="201.5" y="4" width="28.5" height="28"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <gestureRecognizers/>
@@ -162,7 +162,7 @@
                                             <outletCollection property="gestureRecognizers" destination="oMz-Hx-46a" appends="YES" id="HRE-iI-Uwz"/>
                                         </connections>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UN1-8I-cxP" customClass="Palette" customModule="Drawing" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UN1-8I-cxP" customClass="Palette" customModule="Doodle" customModuleProvider="target">
                                         <rect key="frame" x="242" y="4" width="28.5" height="28"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <gestureRecognizers/>
@@ -178,7 +178,7 @@
                                             <outletCollection property="gestureRecognizers" destination="Xqq-wH-Krd" appends="YES" id="m68-Jf-Uk5"/>
                                         </connections>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Io-2E-aMe" customClass="Palette" customModule="Drawing" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Io-2E-aMe" customClass="Palette" customModule="Doodle" customModuleProvider="target">
                                         <rect key="frame" x="282.5" y="4" width="28" height="28"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <gestureRecognizers/>
@@ -194,7 +194,7 @@
                                             <outletCollection property="gestureRecognizers" destination="VCA-jf-fsy" appends="YES" id="wHz-Yj-khs"/>
                                         </connections>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PvK-6N-DSJ" customClass="Eye" customModule="Drawing" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PvK-6N-DSJ" customClass="Eye" customModule="Doodle" customModuleProvider="target">
                                         <rect key="frame" x="322.5" y="4" width="28.5" height="28"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <gestureRecognizers/>

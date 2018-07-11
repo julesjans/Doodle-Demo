@@ -38,12 +38,15 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     var swipe = false
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        self.configurePalettes()
+    override func viewDidLoad() {
+        super.viewDidLoad()
         if let eye = self.palettes.filter({$0 is Eye}).first as? Eye {
             EyeAnimator.shared.animate(eye: eye)
         }
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.configurePalettes()
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -146,12 +149,18 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         tempImageView.image = nil
     }
     
+    var notRandomColours = [
+        UIColor(red: 0, green: 144, blue: 81),
+        UIColor(red: 255, green: 182, blue: 228),
+        UIColor(red: 118, green: 214, blue: 255)
+    ]
+    
     override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
         if motion == .motionShake {
             UIView.animate(withDuration: 0.5, animations: {
                 self.mainImageView.alpha = 0.0
                 self.tempImageView.alpha = 0.0
-                self.drawingView.backgroundColor = UIColor.randomColor(1.0)
+                self.drawingView.backgroundColor = self.notRandomColours.popLast() ?? UIColor.randomColor(1.0)
                 self.drawingView.subviews.filter({$0 is Eye}).forEach({ $0.alpha = 0})
             }) { (done) in
                 self.clear()
@@ -166,9 +175,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         self.tempImageView.alpha = 1.0
         self.drawingView.subviews.filter({$0 is Eye}).forEach({ EyeAnimator.shared.clear(eye: $0 as! Eye)})
         self.drawingView.subviews.filter({$0 is Eye}).forEach({ $0.removeFromSuperview()})
-        if let eye = self.palettes.filter({$0 is Eye}).first as? Eye {
-            EyeAnimator.shared.animate(eye: eye)
-        }
     }
     
     @IBAction func selectPalette(sender: UITapGestureRecognizer) {
