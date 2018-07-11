@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Drawing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ICw-xq-xsg">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ygN-lY-X3H">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JQL-IW-kfa">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="JQL-IW-kfa" secondAttribute="trailing" id="5XB-DF-iUq"/>
+                                    <constraint firstItem="JQL-IW-kfa" firstAttribute="top" secondItem="ICw-xq-xsg" secondAttribute="top" id="9nD-l7-qVd"/>
+                                    <constraint firstItem="ygN-lY-X3H" firstAttribute="leading" secondItem="ICw-xq-xsg" secondAttribute="leading" id="Ftf-rT-zLx"/>
+                                    <constraint firstAttribute="trailing" secondItem="ygN-lY-X3H" secondAttribute="trailing" id="HZq-Fh-9nT"/>
+                                    <constraint firstAttribute="bottom" secondItem="JQL-IW-kfa" secondAttribute="bottom" id="OxY-gL-JSC"/>
+                                    <constraint firstAttribute="bottom" secondItem="ygN-lY-X3H" secondAttribute="bottom" id="Rq8-zV-ELm"/>
+                                    <constraint firstItem="ygN-lY-X3H" firstAttribute="top" secondItem="ICw-xq-xsg" secondAttribute="top" id="Uq8-SS-FLq"/>
+                                    <constraint firstItem="JQL-IW-kfa" firstAttribute="leading" secondItem="ICw-xq-xsg" secondAttribute="leading" id="XXS-04-D51"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yQ6-37-uWF">
+                                <rect key="frame" x="85.5" y="579" width="204" height="28"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="12"/>
+                                <state key="normal" title="SHAKE TO ERASE, TAP TO SAVE!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="save" destination="BYZ-38-t0r" eventType="touchUpInside" id="YGL-sg-yGi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mb1-Sn-UVl">
+                                <rect key="frame" x="315" y="28" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Sup-e7-Byq"/>
+                                    <constraint firstAttribute="width" constant="44" id="e8S-Kl-kle"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="selectPhotoWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9yO-rV-7YR"/>
+                                </connections>
+                            </button>
+                            <stackView clearsContextBeforeDrawing="NO" contentMode="scaleToFill" verticalHuggingPriority="252" distribution="fillEqually" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="QeC-uC-FcG">
+                                <rect key="frame" x="12" y="619" width="351" height="36"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Ek-W9-xM9" customClass="Palette" customModule="Drawing" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="4" width="28.5" height="28"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="7Ek-W9-xM9" secondAttribute="height" multiplier="1:1" id="jQs-Le-oRy"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="colour">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="selected" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="6Yk-tE-tpr" appends="YES" id="eO3-9L-4mv"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yup-8X-wzx" customClass="Palette" customModule="Drawing" customModuleProvider="target">
+                                        <rect key="frame" x="40.5" y="4" width="28" height="28"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="yup-8X-wzx" secondAttribute="height" multiplier="1:1" id="dXl-b9-fQi"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="colour">
+                                                <color key="value" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="chT-Kq-RDx" appends="YES" id="BrS-9r-p5u"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fKO-Ee-UZR" customClass="Palette" customModule="Drawing" customModuleProvider="target">
+                                        <rect key="frame" x="80.5" y="4" width="28.5" height="28"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="fKO-Ee-UZR" secondAttribute="height" multiplier="1:1" id="nQ3-ks-Que"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="colour">
+                                                <color key="value" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="YKt-Et-hBI" appends="YES" id="VRI-yi-WbH"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HmF-u6-QSb" customClass="Palette" customModule="Drawing" customModuleProvider="target">
+                                        <rect key="frame" x="121" y="4" width="28.5" height="28"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="HmF-u6-QSb" secondAttribute="height" multiplier="1:1" id="T8M-46-dxp"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="colour">
+                                                <color key="value" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="vXK-rT-dky" appends="YES" id="tBa-gk-tIo"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MEQ-Xu-Ai2" customClass="Palette" customModule="Drawing" customModuleProvider="target">
+                                        <rect key="frame" x="161.5" y="4" width="28" height="28"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="MEQ-Xu-Ai2" secondAttribute="height" multiplier="1:1" id="fwL-TW-6rs"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="colour">
+                                                <color key="value" red="0.31372549020000001" green="0.56862745100000001" blue="0.039215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="UHq-UE-Z1s" appends="YES" id="JeR-vc-vP5"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8QY-q3-IPW" customClass="Palette" customModule="Drawing" customModuleProvider="target">
+                                        <rect key="frame" x="201.5" y="4" width="28.5" height="28"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="8QY-q3-IPW" secondAttribute="height" multiplier="1:1" id="3Ma-aN-tfX"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="colour">
+                                                <color key="value" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="oMz-Hx-46a" appends="YES" id="HRE-iI-Uwz"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UN1-8I-cxP" customClass="Palette" customModule="Drawing" customModuleProvider="target">
+                                        <rect key="frame" x="242" y="4" width="28.5" height="28"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="UN1-8I-cxP" secondAttribute="height" multiplier="1:1" id="SSG-dU-6SV"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="colour">
+                                                <color key="value" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="Xqq-wH-Krd" appends="YES" id="m68-Jf-Uk5"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Io-2E-aMe" customClass="Palette" customModule="Drawing" customModuleProvider="target">
+                                        <rect key="frame" x="282.5" y="4" width="28" height="28"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="3Io-2E-aMe" secondAttribute="height" multiplier="1:1" id="tk7-En-S8q"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="colour">
+                                                <color key="value" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="VCA-jf-fsy" appends="YES" id="wHz-Yj-khs"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PvK-6N-DSJ" customClass="Eye" customModule="Drawing" customModuleProvider="target">
+                                        <rect key="frame" x="322.5" y="4" width="28.5" height="28"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="PvK-6N-DSJ" secondAttribute="height" multiplier="1:1" id="xop-5H-cXR"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="0iN-tg-S3h" appends="YES" id="ACV-bF-7Sg"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" priority="250" constant="480" id="1Li-S8-QTn"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="36" id="LtE-Gi-jc8"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QeC-uC-FcG" secondAttribute="bottom" constant="12" id="2or-Gm-OB3"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="QeC-uC-FcG" secondAttribute="trailing" constant="12" id="AfC-kP-hwx"/>
+                            <constraint firstItem="Mb1-Sn-UVl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="F9m-hb-vnQ"/>
+                            <constraint firstItem="ICw-xq-xsg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="NXt-2S-GsE"/>
+                            <constraint firstItem="ICw-xq-xsg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Qvg-V9-FhP"/>
+                            <constraint firstItem="yQ6-37-uWF" firstAttribute="centerX" secondItem="JQL-IW-kfa" secondAttribute="centerX" id="VCy-wn-aog"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ICw-xq-xsg" secondAttribute="bottom" id="a4P-7C-A9a"/>
+                            <constraint firstItem="QeC-uC-FcG" firstAttribute="top" secondItem="yQ6-37-uWF" secondAttribute="bottom" constant="12" id="dal-Gw-0el"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ICw-xq-xsg" secondAttribute="trailing" id="ez1-vJ-2CN"/>
+                            <constraint firstItem="QeC-uC-FcG" firstAttribute="centerX" secondItem="ICw-xq-xsg" secondAttribute="centerX" id="j9k-oq-pTY"/>
+                            <constraint firstItem="QeC-uC-FcG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="12" id="tWY-Tm-jLE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Mb1-Sn-UVl" secondAttribute="trailing" constant="16" id="w20-o6-EtQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="drawingView" destination="ICw-xq-xsg" id="7KZ-dK-NR4"/>
+                        <outlet property="mainImageView" destination="ygN-lY-X3H" id="frG-be-rME"/>
+                        <outlet property="palette" destination="QeC-uC-FcG" id="ZDZ-eX-zeh"/>
+                        <outlet property="tempImageView" destination="JQL-IW-kfa" id="lzX-ki-LCa"/>
+                        <outletCollection property="palettes" destination="yup-8X-wzx" collectionClass="NSMutableArray" id="saT-jM-DIV"/>
+                        <outletCollection property="palettes" destination="fKO-Ee-UZR" collectionClass="NSMutableArray" id="ZY0-hP-w7P"/>
+                        <outletCollection property="palettes" destination="HmF-u6-QSb" collectionClass="NSMutableArray" id="fFH-oA-FG0"/>
+                        <outletCollection property="palettes" destination="MEQ-Xu-Ai2" collectionClass="NSMutableArray" id="ol5-VX-Xfk"/>
+                        <outletCollection property="palettes" destination="7Ek-W9-xM9" collectionClass="NSMutableArray" id="RpO-BX-tL9"/>
+                        <outletCollection property="palettes" destination="8QY-q3-IPW" collectionClass="NSMutableArray" id="SGD-mn-3fk"/>
+                        <outletCollection property="palettes" destination="UN1-8I-cxP" collectionClass="NSMutableArray" id="0m5-y5-hLJ"/>
+                        <outletCollection property="palettes" destination="3Io-2E-aMe" collectionClass="NSMutableArray" id="qJc-d3-Uar"/>
+                        <outletCollection property="palettes" destination="PvK-6N-DSJ" collectionClass="NSMutableArray" id="Udc-Dt-KXt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="chT-Kq-RDx">
+                    <connections>
+                        <action selector="selectPaletteWithSender:" destination="BYZ-38-t0r" id="cwI-Jx-3ue"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="YKt-Et-hBI">
+                    <connections>
+                        <action selector="selectPaletteWithSender:" destination="BYZ-38-t0r" id="nr7-kt-0Wa"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="vXK-rT-dky">
+                    <connections>
+                        <action selector="selectPaletteWithSender:" destination="BYZ-38-t0r" id="QJH-UM-NCy"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="6Yk-tE-tpr">
+                    <connections>
+                        <action selector="selectPaletteWithSender:" destination="BYZ-38-t0r" id="9qL-Xb-p4l"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="UHq-UE-Z1s">
+                    <connections>
+                        <action selector="selectPaletteWithSender:" destination="BYZ-38-t0r" id="n6Z-UG-Yfr"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="oMz-Hx-46a">
+                    <connections>
+                        <action selector="selectPaletteWithSender:" destination="BYZ-38-t0r" id="YSQ-4x-QqR"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Xqq-wH-Krd">
+                    <connections>
+                        <action selector="selectPaletteWithSender:" destination="BYZ-38-t0r" id="mrw-ar-H7O"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="VCA-jf-fsy">
+                    <connections>
+                        <action selector="selectPaletteWithSender:" destination="BYZ-38-t0r" id="15Z-dg-5Tn"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="0iN-tg-S3h">
+                    <connections>
+                        <action selector="selectPaletteWithSender:" destination="BYZ-38-t0r" id="9hB-2J-SoM"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+</document>
