@@ -1,6 +1,6 @@
 //
 //  Photos.swift
-//  Drawing
+//  Doodle
 //
 //  Created by Julian Jans on 27/06/2018.
 //  Copyright © 2018 Julian Jans. All rights reserved.
@@ -12,7 +12,7 @@ import Photos
 /// I can't take credit for this file: https://stackoverflow.com/a/30673344
 class CustomPhotoAlbum: NSObject {
     
-    static let albumName = "Drawing App"
+    static let albumName = "Doodle App"
     static let sharedInstance = CustomPhotoAlbum()
     
     var assetCollection: PHAssetCollection!
