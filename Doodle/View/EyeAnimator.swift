@@ -31,6 +31,8 @@ class EyeAnimator {
     
     func animate(eye: Eye) {
         
+        assert(animators.filter({$0.referenceView === eye}).isEmpty)
+        
         let animator = UIDynamicAnimator(referenceView: eye)
         
         let gravity = UIGravityBehavior()
@@ -58,14 +60,7 @@ class EyeAnimator {
     }
     
     func clear(eye: Eye) {
-        
-//        self.animators.forEach { (animator) in
-//            animator.behaviors.forEach({ (behaviour) in
-//                behaviour.
-//            })
-//        }
-//
-        animators.forEach({$0.removeAllBehaviors()})
+        animators.filter({$0.referenceView === eye}).forEach({$0.removeAllBehaviors()})
     }
     
     deinit {
