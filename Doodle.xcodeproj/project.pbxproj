@@ -68,12 +68,20 @@
 			isa = PBXGroup;
 			children = (
 				84B33F9820EAD2BC004AA2AE /* Supporting Files */,
+				84B33F9620EAD29F004AA2AE /* Extensions */,
 				84B33F9720EAD2AF004AA2AE /* Model */,
 				84B33F9920EAD2D1004AA2AE /* View */,
-				84B33F9620EAD29F004AA2AE /* Extensions */,
-				8425129F20E3F107007AE177 /* ViewController.swift */,
+				846E6B232109224E00234405 /* Controller */,
 			);
 			path = Doodle;
+			sourceTree = "<group>";
+		};
+		846E6B232109224E00234405 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8425129F20E3F107007AE177 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		84B33F9620EAD29F004AA2AE /* Extensions */ = {
