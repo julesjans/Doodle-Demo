@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,17 +15,17 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Doodle" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ICw-xq-xsg">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ygN-lY-X3H">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JQL-IW-kfa">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -42,7 +41,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yQ6-37-uWF">
-                                <rect key="frame" x="85.5" y="579" width="204" height="28"/>
+                                <rect key="frame" x="105" y="774" width="204" height="28"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="12"/>
                                 <state key="normal" title="SHAKE TO ERASE, TAP TO SAVE!">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -52,7 +51,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mb1-Sn-UVl">
-                                <rect key="frame" x="315" y="28" width="44" height="44"/>
+                                <rect key="frame" x="354" y="52" width="44" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="Sup-e7-Byq"/>
                                     <constraint firstAttribute="width" constant="44" id="e8S-Kl-kle"/>
@@ -63,10 +62,10 @@
                                 </connections>
                             </button>
                             <stackView clearsContextBeforeDrawing="NO" contentMode="scaleToFill" verticalHuggingPriority="252" distribution="fillEqually" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="QeC-uC-FcG">
-                                <rect key="frame" x="12" y="619" width="351" height="36"/>
+                                <rect key="frame" x="12" y="814" width="390" height="36"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Ek-W9-xM9" customClass="Palette" customModule="Doodle" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="4" width="28.5" height="28"/>
+                                        <rect key="frame" x="0.0" y="1.5" width="32.5" height="33"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <gestureRecognizers/>
                                         <constraints>
@@ -83,7 +82,7 @@
                                         </connections>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yup-8X-wzx" customClass="Palette" customModule="Doodle" customModuleProvider="target">
-                                        <rect key="frame" x="40.5" y="4" width="28" height="28"/>
+                                        <rect key="frame" x="44.5" y="1.5" width="33" height="33"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <gestureRecognizers/>
                                         <constraints>
@@ -99,7 +98,7 @@
                                         </connections>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fKO-Ee-UZR" customClass="Palette" customModule="Doodle" customModuleProvider="target">
-                                        <rect key="frame" x="80.5" y="4" width="28.5" height="28"/>
+                                        <rect key="frame" x="89.5" y="1.5" width="32.5" height="33"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <gestureRecognizers/>
                                         <constraints>
@@ -115,7 +114,7 @@
                                         </connections>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HmF-u6-QSb" customClass="Palette" customModule="Doodle" customModuleProvider="target">
-                                        <rect key="frame" x="121" y="4" width="28.5" height="28"/>
+                                        <rect key="frame" x="134" y="1.5" width="32.5" height="33"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <gestureRecognizers/>
                                         <constraints>
@@ -131,7 +130,7 @@
                                         </connections>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MEQ-Xu-Ai2" customClass="Palette" customModule="Doodle" customModuleProvider="target">
-                                        <rect key="frame" x="161.5" y="4" width="28" height="28"/>
+                                        <rect key="frame" x="178.5" y="1.5" width="33" height="33"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <gestureRecognizers/>
                                         <constraints>
@@ -147,7 +146,7 @@
                                         </connections>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8QY-q3-IPW" customClass="Palette" customModule="Doodle" customModuleProvider="target">
-                                        <rect key="frame" x="201.5" y="4" width="28.5" height="28"/>
+                                        <rect key="frame" x="223.5" y="1.5" width="32.5" height="33"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <gestureRecognizers/>
                                         <constraints>
@@ -163,7 +162,7 @@
                                         </connections>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UN1-8I-cxP" customClass="Palette" customModule="Doodle" customModuleProvider="target">
-                                        <rect key="frame" x="242" y="4" width="28.5" height="28"/>
+                                        <rect key="frame" x="268" y="1.5" width="32.5" height="33"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <gestureRecognizers/>
                                         <constraints>
@@ -179,7 +178,7 @@
                                         </connections>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Io-2E-aMe" customClass="Palette" customModule="Doodle" customModuleProvider="target">
-                                        <rect key="frame" x="282.5" y="4" width="28" height="28"/>
+                                        <rect key="frame" x="312.5" y="1.5" width="33" height="33"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <gestureRecognizers/>
                                         <constraints>
@@ -195,7 +194,7 @@
                                         </connections>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PvK-6N-DSJ" customClass="Eye" customModule="Doodle" customModuleProvider="target">
-                                        <rect key="frame" x="322.5" y="4" width="28.5" height="28"/>
+                                        <rect key="frame" x="357.5" y="1.5" width="32.5" height="33"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <gestureRecognizers/>
                                         <constraints>
@@ -219,11 +218,11 @@
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="QeC-uC-FcG" secondAttribute="trailing" constant="12" id="AfC-kP-hwx"/>
                             <constraint firstItem="Mb1-Sn-UVl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="F9m-hb-vnQ"/>
                             <constraint firstItem="ICw-xq-xsg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="NXt-2S-GsE"/>
-                            <constraint firstItem="ICw-xq-xsg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Qvg-V9-FhP"/>
+                            <constraint firstItem="ICw-xq-xsg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Qvg-V9-FhP"/>
                             <constraint firstItem="yQ6-37-uWF" firstAttribute="centerX" secondItem="JQL-IW-kfa" secondAttribute="centerX" id="VCy-wn-aog"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ICw-xq-xsg" secondAttribute="bottom" id="a4P-7C-A9a"/>
+                            <constraint firstAttribute="bottom" secondItem="ICw-xq-xsg" secondAttribute="bottom" id="a4P-7C-A9a"/>
                             <constraint firstItem="QeC-uC-FcG" firstAttribute="top" secondItem="yQ6-37-uWF" secondAttribute="bottom" constant="12" id="dal-Gw-0el"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ICw-xq-xsg" secondAttribute="trailing" id="ez1-vJ-2CN"/>
+                            <constraint firstAttribute="trailing" secondItem="ICw-xq-xsg" secondAttribute="trailing" id="ez1-vJ-2CN"/>
                             <constraint firstItem="QeC-uC-FcG" firstAttribute="centerX" secondItem="ICw-xq-xsg" secondAttribute="centerX" id="j9k-oq-pTY"/>
                             <constraint firstItem="QeC-uC-FcG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="12" id="tWY-Tm-jLE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Mb1-Sn-UVl" secondAttribute="trailing" constant="16" id="w20-o6-EtQ"/>
