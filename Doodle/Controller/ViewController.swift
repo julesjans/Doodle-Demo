@@ -72,7 +72,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             counter = 0
             points.insert(touch.location(in: drawingView), at: 0)
             
-            UIGraphicsBeginImageContext(drawingView.frame.size)
+            UIGraphicsBeginImageContextWithOptions(drawingView.frame.size, false, 2.0)
             // Is this necessary?
             // tempImageView.image?.draw(in: drawingView.bounds)
         }
